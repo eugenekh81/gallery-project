@@ -1,0 +1,48 @@
+.card {
+  width: 360px;
+  height: 200px;
+
+  border: 1px solid #808080;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: calc(200px - 48px);
+  object-fit: cover;
+  object-position: center;
+}
+.card__info {
+}
+
+.info {
+  height: 48px;
+  display: flex;
+}
+.info__list {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info__title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.info__value {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}

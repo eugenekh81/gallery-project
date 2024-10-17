@@ -20,3 +20,9 @@
 /* Search form style */
 @import url('./search-form.css');
 @import url('./form.css');
+
+/* Gallery styles*/
+@import url('./gallery.css');
+
+/* Card styles */
+@import url('./card.css');
