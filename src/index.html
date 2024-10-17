@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Photo Gallery </title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    >
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    >
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <load
+      src="./partials/header.html"
+      icon-path="img/sprite.svg#logo"
+    >
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <main>
+        <!-- Loads the specified .html file -->
+        <!-- <load src="./partials/vite-promo.html"> -->
+        <!-- <load src="./partials/badges.html"> -->
 
-    <load src="./partials/footer.html" />
+        <!-- SEARCH FORM -->
+        <section class="search-form">
 
-    <script type="module" src="./main.js"></script>
+          <form
+            class="search-form__form form"
+            id="search-form"
+          >
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Search images..."
+            >
+            <button
+              type="submit"
+              class="form__button"
+            >
+              Search
+            </button>
+          </form>
+        </section>
+
+        <section class="gallery">
+          <ul
+            class="gallery__list"
+            id="gallery"
+          >
+            <li class="gallery__item card">
+              <div class="card__image-container">
+                <img
+                  src=""
+                  alt=""
+                  class="card__image"
+                >
+              </div>
+              <div class="card__info info">
+                <ul class="info__list">
+                  <li class="info__item">
+                    <h3 class="info__title">Likes</h3>
+                    <p class="info__value">
+                      1813
+                    </p>
+                  </li>
+                  <li class="info__item">
+                    <h3 class="info__title">Views</h3>
+                    <p class="info__value">
+                      900290
+                    </p>
+                  </li>
+                  <li class="info__item">
+                    <h3 class="info__title">Comments</h3>
+                    <p class="info__value">
+                      229
+                    </p>
+                  </li>
+                  <li class="info__item">
+                    <h3 class="info__title">Downloads</h3>
+                    <p class="info__value">
+                      610937
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <load src="./partials/footer.html">
+
+        <script
+          type="module"
+          src="./main.js"
+        ></script>
   </body>
 </html>

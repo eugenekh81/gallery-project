@@ -16,3 +16,7 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* Search form style */
+@import url('./search-form.css');
+@import url('./form.css');
