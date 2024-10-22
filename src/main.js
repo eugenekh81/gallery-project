@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+
 const form = document.getElementById('search-form');
 
 import { loadData } from './js/pixabay-api';
